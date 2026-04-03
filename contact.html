@@ -1,110 +1,1719 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Bevonda</title>
-    <link rel="icon" type="image/png" href="images/favicon.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --bevonda-red: #C41E3A; --bevonda-dark: #8B1528; --cream: #FFF8F0; --text-dark: #1A1A1A; --text-light: #666666; --white: #FFFFFF; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Jost', sans-serif; color: var(--text-dark); line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
-        img { max-width: 100%; height: auto; }
-        .navbar { position: fixed; top: 0; left: 0; right: 0; background: var(--white); padding: 1rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .nav-container { max-width: 1820px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 2rem; font-weight: 700; color: var(--bevonda-red); letter-spacing: 0.1em; }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.9rem; }
-        .nav-links a:hover { color: var(--bevonda-red); }
-        .nav-icons { display: flex; gap: 1.5rem; align-items: center; }
-        .page-header { margin-top: 80px; background: var(--cream); padding: 4rem 2rem; text-align: center; }
-        .page-header h1 { font-size: 2.5rem; color: var(--bevonda-red); margin-bottom: 1rem; }
-        .content { max-width: 600px; margin: 4rem auto; padding: 0 2rem; }
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
-        .form-group input, .form-group textarea { width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 1rem; }
-        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--bevonda-red); }
-        .form-group textarea { min-height: 150px; resize: vertical; }
-        .btn-submit { display: inline-block; padding: 1rem 3rem; background: var(--bevonda-red); color: white; border: none; border-radius: 30px; font-weight: 500; font-size: 1.1rem; cursor: pointer; width: 100%; }
-        .btn-submit:hover { background: var(--bevonda-dark); }
-        .footer { background: var(--text-dark); color: white; padding: 3rem 2rem; margin-top: 4rem; }
-        .footer-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
-        .footer-section h3 { color: var(--bevonda-red); margin-bottom: 1rem; }
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 0.5rem; }
-        .footer-bottom { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
-    </style>
+<!doctype html>
+  <html class="no-js" lang="en">
+    <head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+h1, h2, h3, h4, h5, h6,
+.font-heading,
+.heading,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  font-family: 'Jost', sans-serif !important;
+}
+</style>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="theme-color" content="">
+      <link rel="canonical" href="/bevonda/contact">
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
+      <link rel="preconnect" href="https://monorail-edge.shopifysvc.com"><link rel="icon" type="image/png" href="/bevonda/cdn/shop/files/BevondaFavicon_755ad56d-28c3-4cb1-9052-6bc6f35de20b.jpg"><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><title>
+        Contact
+ &ndash; Bevonda</title>
+
+      
+
+
+<meta property="og:site_name" content="Bevonda">
+<meta property="og:url" content="pages/contact">
+<meta property="og:title" content="Contact">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Handcrafted Soda Made With Pure Cane Sugar."><meta name="twitter:site" content="@DrinkBevonda"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact">
+<meta name="twitter:description" content="Handcrafted Soda Made With Pure Cane Sugar.">
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script>
+
+<meta id="in-context-paypal-metadata" data-shop-id="84226572565" data-venmo-supported="true" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<script async="async" src="/bevonda/checkouts/internal/preloads.js"></script>
+
+<script>var Shopify = Shopify || {};
+Shopify.shop = "0d33b3-ee.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"Shapes","id":163386130709,"schema_name":"Shapes","schema_version":"2.2.5","theme_store_id":1535,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "www.drinkbevonda.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+
+
+<script type="module">
+  await import("cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
+
+  window.Shopify.SignInWithShop"fedCMEnabled":true,"windoidEnabled":true});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"avatar":["modules/v2/loader.avatar.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"]};
+</script>
+<script id="__st">var __st={"a":84226572565,"offset":-14400,"reqid":"ca3a2fd8-9d5d-49d2-a6ff-b7d7df39d332-1775236752","pageurl":"www.drinkbevonda.com\/pages\/contact","s":"pages-131296854293","u":"865f1de26321","p":"page","rtyp":"page","rid":131296854293};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+
+
+
+
+
+<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
+<style id="shopify-accelerated-checkout-cart">
+        #shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+      <script>
+  window.THEMENAME = 'Shapes';
+  window.THEMEVERSION = '1.0.1';
+
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+  window.theme = {
+    strings: {
+      itemCountOne: "{{ count }} item",
+      itemCountOther: "{{ count }} items",
+      loading: "Loading",
+      addToCart: "Add to Cart",
+      preOrder: "Pre-order",
+      soldOut: "Sold Out",
+      unavailable: "Unavailable",
+      regularPrice: "Regular price",
+      salePrice: "Sale price",
+      sale: "On Sale",
+      unitPrice: "Unit price",
+      unitPriceSeparator: "per",
+      cartEmpty: "Your cart is currently empty.",
+      cartCookies: "Enable cookies to use the shopping cart",
+      update: "Update Cart",
+      quantity: "Quantity",
+      discountedTotal: "Discounted total",
+      regularTotal: "Regular total",
+      priceColumn: "See Price column for discount details.",
+      addedToCart: "Added to Cart!",
+      cartError: "There was an error while updating your cart. Please try again.",
+      cartAddError: "All {{ title }} are in your cart."
+    },
+    routes: {
+      root_url: "\/",
+      cart_url: "\/cart",
+      cart_add_url: "\/cart\/add",
+      cart_change_url: "\/cart\/change",
+      cart_update_url: "\/cart\/update",
+      cart_clear_url: "\/cart\/clear",
+      predictive_search_url: '/search/suggest'
+    },
+    moneyFormat: "${{amount}}",
+    moneyWithCurrencyFormat: "${{amount}} USD",
+    cartItemCount: 0,
+    settings: {
+      cart_type: "page",
+      open_modal_on_add_to_cart: true,
+      parallax_intensity: 50
+    },
+    info: {
+      name: 'Shapes',
+    }
+  };
+</script>
+
+
+      <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+      <script>
+        function debounce(fn, wait) {
+          let t;
+          return (...args) => {
+            clearTimeout(t);
+            t = setTimeout(() => fn.apply(this, args), wait);
+          };
+        }
+      </script>
+      <script src="/bevonda/cdn/shop/t/2/assets/utils.js" defer></script>
+      <script src="/bevonda/cdn/shop/t/2/assets/global.bundle.min.js" type="module"></script>
+      <script src="/bevonda/cdn/shop/t/2/assets/cart-count.js" type="module"></script>
+      
+      
+      <script src="/bevonda/cdn/shop/t/2/assets/alpine-extensions.js" defer></script>
+      <link rel="stylesheet" href="/bevonda/cdn/shop/t/2/assets/base.bundle.css">
+      
+      
+      <style>
+        :root {
+          --max-site-width: 1820px;
+        }
+      </style>
+      <style data-shopify>
+        @font-face {
+  font-family: Jost;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("cdn/fonts/jost/jost_n5.7c8497861ffd15f4e1284cd221f14658b0e95d61.woff2") format("woff2"),
+       url("cdn/fonts/jost/jost_n5.fb6a06896db583cc2df5ba1b30d9c04383119dd9.woff") format("woff");
+}
+
+        @font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("cdn/fonts/jost/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2") format("woff2"),
+       url("cdn/fonts/jost/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff") format("woff");
+}
+
+        
+@font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("cdn/fonts/jost/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2") format("woff2"),
+       url("cdn/fonts/jost/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff") format("woff");
+}
+@font-face {
+  font-family: Jost;
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("cdn/fonts/jost/jost_i5.a6c7dbde35f2b89f8461eacda9350127566e5d51.woff2") format("woff2"),
+       url("cdn/fonts/jost/jost_i5.2b58baee736487eede6bcdb523ca85eea2418357.woff") format("woff");
+}
+@font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("cdn/fonts/jost/jost_i7.d8201b854e41e19d7ed9b1a31fe4fe71deea6d3f.woff2") format("woff2"),
+       url("cdn/fonts/jost/jost_i7.eae515c34e26b6c853efddc3fc0c552e0de63757.woff") format("woff");
+}
+@font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("cdn/fonts/jost/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2") format("woff2"),
+       url("cdn/fonts/jost/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff") format("woff");
+}
+:root {
+          --heading-font-stack: Jost, sans-serif;
+          --heading-font-weight: 700;
+          --heading-font-style: normal;
+          --heading-letterspacing: 0.0;
+          --heading-capitalize: uppercase;
+          --main-font-stack: Jost, sans-serif;
+          --main-font-weight: 500;
+          --main-font-style: normal;
+          --accent-font-stack: , ;
+          --accent-font-weight: ;
+          --accent-font-style: ;
+        }
+      </style>
+<style>
+  :root {
+    --payment-button-height: 48px;
+    --section-x-padding: 1.25rem;
+    --grid-gap: 1.25rem;
+    --icon-thickness: 1.5;
+    --header-height: 60px;
+
+    --global-scrolling-items-speed-multiplier: 1;
+
+    --transparent: transparent;
+
+    --color-primary-text: 255, 255, 255;
+    --color-primary-background: 77, 45, 31;
+    --color-primary-accent-1: 159, 219, 233;
+    --color-primary-accent-2: 77, 45, 31;
+    --color-primary-card: 255, 255, 255;
+    --color-primary-gradient: linear-gradient(39deg, rgba(159, 216, 233, 1) 1%, rgba(37, 60, 151, 1) 96%);--color-primary-text-overlay: 77, 45, 31;
+--color-primary-card-text-overlay: 77, 45, 31;
+--color-primary-accent-1-overlay: 77, 45, 31;
+--color-primary-accent-2-overlay: 255, 255, 255;
+--color-secondary-text: 255, 131, 0;
+    --color-secondary-background: 168, 0, 81;
+    --color-secondary-accent-1: 255, 79, 97;
+    --color-secondary-accent-2: 255, 255, 255;
+    --color-secondary-card: 17, 26, 55;
+    --color-secondary-gradient: linear-gradient(127deg, rgba(255, 131, 0, 1) 11%, rgba(168, 0, 81, 1) 81%);--color-secondary-text-overlay: 0, 0, 0;
+--color-secondary-card-text-overlay: 17, 26, 55;
+--color-secondary-accent-1-overlay: 0, 0, 0;
+--color-secondary-accent-2-overlay: 168, 0, 81;
+--color-tertiary-text: 255, 255, 255;
+    --color-tertiary-background: 231, 35, 119;
+    --color-tertiary-accent-1: 231, 35, 119;
+    --color-tertiary-accent-2: 243, 181, 205;
+    --color-tertiary-card: 255, 131, 0;
+    --color-tertiary-gradient: linear-gradient(54deg, rgba(231, 35, 119, 1) 13%, rgba(243, 181, 205, 1) 85%);--color-tertiary-text-overlay: 0, 0, 0;
+--color-tertiary-card-text-overlay: 0, 0, 0;
+--color-tertiary-accent-1-overlay: 255, 255, 255;
+--color-tertiary-accent-2-overlay: 0, 0, 0;
+--color-quaternary-text: 255, 255, 255;
+    --color-quaternary-background: 245, 242, 20;
+    --color-quaternary-accent-1: 245, 242, 20;
+    --color-quaternary-accent-2: 33, 110, 17;
+    --color-quaternary-card: 243, 181, 205;
+    --color-quaternary-gradient: linear-gradient(127deg, rgba(244, 230, 19, 1) 17%, rgba(33, 110, 17, 1) 81%);--color-quaternary-text-overlay: 0, 0, 0;
+--color-quaternary-card-text-overlay: 0, 0, 0;
+--color-quaternary-accent-1-overlay: 0, 0, 0;
+--color-quaternary-accent-2-overlay: 245, 242, 20;
+--color-border: 0, 0, 0;
+    --section-border-thickness: 0px;
+    --drop-down-offset: 2px;
+    --shape-divider-offset: 2px;
+
+
+    --button-border-radius: 0.5rem;
+    --textarea-border-radius: 0.5rem;
+    --button-border-width: 2px;
+    --input-border-width: 2px;
+    --button-shadow-border-width: var(--button-border-width);
+    --button-text-transform: uppercase;
+    --button-drop-shadow-size:  6px;
+    --button-drop-shadow-top-size: 6px;
+    --button-drop-shadow-left-size: 0px;
+    --button-hover-top-size: 6px;
+    --button-hover-left-size: var(--button-drop-shadow-left-size);
+    --button-shadow-display: block;
+    --sticker-border-radius: 0;
+    --sticker-border-width: 2px;
+    --sticker-shadow-border-width: 0;
+    --sticker-text-transform: uppercase;
+    --sticker-drop-shadow-top-size: 0px;
+    --sticker-drop-shadow-left-size: 0px;
+    --card-border-radius: 0.375rem;
+    --card-drop-shadow-size: 12px;
+    --card-drop-shadow-top-size: 12px;
+    --card-drop-shadow-left-size: 0;
+    --card-border-width: 2px;
+    --card-shadow-border-width: var(--card-border-width);
+    --media-border-radius: 0.375rem;
+    --media-drop-shadow-size: 6px;
+    --media-drop-shadow-top-size: 6px;
+    --media-drop-shadow-left-size: 0;
+    --media-drop-shadow-size-half: 3.0px;
+    --media-drop-shadow-top-size-half: 3.0px;
+    --media-drop-shadow-left-size-half: 0;
+    --media-border-width: 2px;
+    --media-shadow-border-width: var(--media-border-width);
+    --heading-shadow-spread: 6px;
+    --heading-stroke-thickness: 0px;
+    --product-tiles-text-transform: uppercase;
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+
+    --hover-effect-enlarge-shape: 1;
+    --hover-effect-lift-shape: 0;
+    --hover-effect-rotate-shape: 0deg;
+  }
+
+
+
+  [data-color-scheme="primary"] {
+    --color-scheme-text: var(--color-primary-text);
+    --color-scheme-background: var(--color-primary-background);
+    --color-scheme-accent-1: var(--color-primary-accent-1);
+    --color-scheme-accent-2: var(--color-primary-accent-2);
+    --color-scheme-card: var(--color-primary-card);
+    --color-scheme-gradient: var(--color-primary-gradient);
+    --color-scheme-text-overlay: var(--color-primary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-primary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-primary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-primary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-primary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+  }
+
+
+  [data-color-scheme="secondary"] {
+    --color-scheme-text: var(--color-secondary-text);
+    --color-scheme-background: var(--color-secondary-background);
+    --color-scheme-gradient: var(--color-secondary-gradient);
+    --color-scheme-accent-1: var(--color-secondary-accent-1);
+    --color-scheme-accent-2: var(--color-secondary-accent-2);
+    --color-scheme-card: var(--color-secondary-card);
+    --color-scheme-text-overlay: var(--color-secondary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-secondary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-secondary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-secondary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-secondary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23ff8300' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+  }
+
+
+  [data-color-scheme="tertiary"] {
+    --color-scheme-text: var(--color-tertiary-text);
+    --color-scheme-background: var(--color-tertiary-background);
+    --color-scheme-accent-1: var(--color-tertiary-accent-1);
+    --color-scheme-accent-2: var(--color-tertiary-accent-2);
+    --color-scheme-card: var(--color-tertiary-card);
+    --color-scheme-gradient: var(--color-tertiary-gradient);
+    --color-scheme-text-overlay: var(--color-tertiary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-tertiary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-tertiary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-tertiary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-tertiary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+  }
+
+  [data-color-scheme="quaternary"] {
+    --color-scheme-text: var(--color-quaternary-text);
+    --color-scheme-background: var(--color-quaternary-background);
+    --color-scheme-accent-1: var(--color-quaternary-accent-1);
+    --color-scheme-accent-2: var(--color-quaternary-accent-2);
+    --color-scheme-card: var(--color-quaternary-card);
+    --color-scheme-gradient: var(--color-quaternary-gradient);
+    --color-scheme-text-overlay: var(--color-quaternary-text-overlay);
+    --color-scheme-card-text-overlay: var(--color-quaternary-card-text-overlay);
+    --color-scheme-accent-1-overlay: var(--color-quaternary-accent-1-overlay);
+    --color-scheme-accent-2-overlay: var(--color-quaternary-accent-2-overlay);
+    --color-scheme-secondary-background: var(--color-quaternary-background);
+    --select-svg: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E%0A");
+  }
+
+  [data-color-scheme="white"] {
+    --color-scheme-text: 255,255,255;
+    --color-scheme-accent: 255,255,255;
+    --color-scheme-background: 0,0,0;
+    --color-scheme-card: 0,0,0;
+    --color-scheme-text-overlay: 0,0,0;
+    --color-scheme-accent-1-overlay: 0,0,0;
+    --color-border: 255,255,255;
+  }
+
+  [data-color-scheme="black"] {
+    --color-scheme-text: 0,0,0;
+    --color-scheme-accent: 0,0,0;
+    --color-scheme-background: 255,255,255;
+    --color-scheme-card: 255,255,255;
+    --color-scheme-text-overlay: 255,255,255;
+    --color-scheme-accent-1-overlay: 255,255,255;
+    --color-border: 0,0,0;
+  }
+
+
+  
+  [data-color-scheme="primary"] .card {
+    --color-scheme-secondary-background: var(--color-primary-card);
+  }
+
+  [data-color-scheme="secondary"] .card {
+    --color-scheme-secondary-background: var(--color-secondary-card);
+  }
+
+  [data-color-scheme="tertiary"] .card {
+    --color-scheme-secondary-background: var(--color-tertiary-card);
+  }
+
+  [data-color-scheme="quaternary"] .card {
+    --color-scheme-secondary-background: var(--color-quaternary-card);
+  }
+  
+[data-color-scheme] {
+    --color-heading-shadow: var(--color-scheme-accent-1);
+    --color-heading-stroke: var(--color-scheme-text);
+    --color-button-background: var(--color-scheme-text);
+    --color-button-text: var(--color-scheme-text-overlay);
+    --color-button-border: var(--color-scheme-text);
+    --color-button-shadow: var(--color-scheme-gradient);
+    --color-card-border: var(--color-scheme-text);
+    --color-card-shadow: var(--color-scheme-gradient);
+    --color-sticker-border: var(--color-scheme-text);
+    --color-sticker-shadow: var(--color-scheme-text);
+    --color-media-border: var(--color-scheme-text);
+    --color-media-shadow: var(--color-scheme-gradient);
+    --color-media-shadow-fill: rgb(var(--color-scheme-gradient));
+    --color-sticker-shadow: var(--color-scheme-text);
+    --color-sticker-shadow-fill: rgb(var(--color-scheme-text));--heading-color: var(--color-scheme-background);
+    --heading-text-shadow:}
+
+  [data-color-scheme] .card {
+    --color-scheme-text-overlay: var(--color-scheme-card-text-overlay);
+  }
+  
+  [data-color-scheme] .card {
+    --color-button-text: var(--color-scheme-card-text-overlay);
+  }
+
+
+  /*
+  Typography and spacing sizes
+  */:root {
+    --base-font-size: 112.5%;
+    --base-line-height: 1.2;
+    --line-height-heading: 1.1;
+    --font-size-ratio-xs: 0.7491535;
+    --font-size-ratio-sm: 0.8908985;
+    --font-size-ratio-base: 1;
+    --font-size-ratio-lg: 1.33484;
+    --font-size-ratio-xl: 1.498307;
+    --font-size-ratio-2xl: 1.681793;
+    --font-size-ratio-3xl: 2;
+    --font-size-ratio-4xl: 2.66968;
+    --font-size-ratio-5xl: 2.996614;
+    --font-size-ratio-6xl: 3.563594;
+    --font-size-ratio-7xl: 4;
+    --font-size-ratio-8xl: 4.519842;
+    --font-size-ratio-9xl: 4.996614;
+    --font-size-xs: calc(var(--font-size-ratio-xs) * 1rem);
+    --font-size-sm: calc(var(--font-size-ratio-sm) * 1rem);
+    --font-size-base: calc(var(--font-size-ratio-base) * 1rem);
+    --font-size-lg: calc(var(--font-size-ratio-lg) * 1rem);
+    --font-size-xl: calc(var(--font-size-ratio-xl) * 1rem);
+    --font-size-2xl: calc(var(--font-size-ratio-2xl) * 1rem);
+    --font-size-3xl: calc(var(--font-size-ratio-3xl) * 1rem);
+    --font-size-4xl: calc(var(--font-size-ratio-4xl) * 1rem);
+    --font-size-5xl: calc(var(--font-size-ratio-5xl) * 1rem);
+    --font-size-6xl: calc(var(--font-size-ratio-6xl) * 1rem);
+    --font-size-7xl: calc(var(--font-size-ratio-7xl) * 1rem);
+    --font-size-8xl: calc(var(--font-size-ratio-8xl) * 1rem);
+    --font-size-9xl: calc(var(--font-size-ratio-9xl) * 1rem);
+
+    --standard-heading-size: var(--font-size-3xl);
+    --feature-heading-size: var(--font-size-4xl);
+    --secondary-heading-size: var(--font-size-lg);
+    --section-vertical-spacing: 2rem;
+  }
+  @media (min-width: 990px) {
+    :root {
+      --standard-heading-size: var(--font-size-5xl);
+      --feature-heading-size: var(--font-size-8xl);
+      --secondary-heading-size: var(--font-size-lg);
+      --section-vertical-spacing: 4rem;
+      --section-x-padding: 2.5rem;
+      --grid-gap: 2.5rem;
+    }
+  }
+
+
+  .heading-effects {
+    color: rgb(var(--heading-color));
+    text-shadow: var(--heading-text-shadow);
+    -webkit-text-stroke: var(--heading-stroke-thickness) rgb(var(--color-heading-stroke));
+    text-stroke: var(--heading-stroke-thickness) rgb(var(--color-heading-stroke));
+  }
+
+  .heading-standard {
+    font-size: var(--standard-heading-size);
+    
+  }
+
+  .heading-feature {
+    font-size: var(--feature-heading-size);
+    
+    color: rgb(var(--heading-color));
+    text-shadow: var(--heading-text-shadow);
+    -webkit-text-stroke: var(--heading-stroke-thickness) rgb(var(--color-heading-stroke));
+    text-stroke: var(--heading-stroke-thickness) rgb(var(--color-heading-stroke));
+    
+  }
+
+  .heading-secondary {
+    font-size: var(--secondary-heading-size);
+  }
+
+
+  /*
+  Cards
+  */
+  .card-container::after {}
+
+  /*
+  Media
+  */
+  .media-style-container::after,
+  .media-shape-drop-shadow {}
+
+
+  /*
+  Custom cursor
+  */</style>
+
+
+      
+      <style id="generated-critical-css">
+.max-w-site{max-width:var(--max-site-width)}
+</style>
+      
+      <style id="manual-critical-css">
+        [x-cloak] {
+          display: none;
+        }
+        [data-parallax-container] {
+          will-change: opacity;
+          opacity: 0;
+          transition: opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        .no-js [data-parallax-container],
+        [data-parallax-container].animated {
+          opacity: 1;
+        }
+
+        @media (prefers-reduced-motion) {
+          [data-parallax-container] {
+            opacity: 1;
+          }
+        }
+      </style>
+
+      
+      
+        <link rel="preload" as="font" href="cdn/fonts/jost/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2" type="font/woff2" crossorigin>
+      
+      
+        <link rel="preload" as="font" href="cdn/fonts/jost/jost_n5.7c8497861ffd15f4e1284cd221f14658b0e95d61.woff2" type="font/woff2" crossorigin>
+      
+      
+      <script>
+        window.onYouTubeIframeAPIReady = () => {
+          document.body.dispatchEvent(new CustomEvent('youtubeiframeapiready'));
+        };
+      </script>
+    
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 84226572565,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i"wpm:start")}catch(e){}var l=function(){var e={modern:/Edge"modern":n.match(r)"legacy":"unknown"}(),u="modern"===l"modern":"legacy",c=(null!=n"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t"script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e"Unknown error"})}}})({shopId: 84226572565,storefrontBaseUrl: "https://www.drinkbevonda.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["2dca8a86","5476ea20","ed8389fc"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Bevonda","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"0d33b3-ee.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/www.drinkbevonda.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"cdn","cfa8229ew36b6053dp1e134caame9d83f21",{"modern":"","legacy":""},{"shopId":"84226572565","storefrontBaseUrl":"https:\/\/www.drinkbevonda.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"2dca8a86\", \"5476ea20\", \"ed8389fc\"]","isMerchantRequest":"false","hashVersion":"cfa8229ew36b6053dp1e134caame9d83f21","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'USD';
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":131296854293,"requestId":"ca3a2fd8-9d5d-49d2-a6ff-b7d7df39d332-1775236752"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+
+
 </head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">BEVONDA</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="branding.html">Branding</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+    <body data-color-scheme="primary">
+      
+<svg width="0" height="0" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-metafield-badge" clipPathUnits="objectBoundingBox">
+      <path clip-rule="evenodd" transform="scale(0.005,0.005)" d="M100 5L195 100L100 195L5 100L100 5Z" fill="black"/>
+    </clipPath>
+    <path id="outline-metafield-badge" vector-effect="non-scaling-stroke"  d="M100 5L195 100L100 195L5 100L100 5Z" />
+  </defs>
+</svg>
+
+
+      
+      <a class="skip-link" href="#MainContent">Skip to content</a><!-- BEGIN sections: header-group -->
+<div id="shopify-section-sections--21706269524245__header" class="shopify-section shopify-section-group-header-group section-site-header relative z-40">
+
+
+
+
+
+
+
+
+
+  <script src="/bevonda/cdn/shop/t/2/assets/header.js" type="module"></script>
+
+
+<header
+  class="
+    site-header w-full text-scheme-text
+    
+      relative bg-scheme-background text-scheme-text border-b-section border-border
+    
+    transition-[background-color,border-color] ease-in-out duration-200
+    "
+  role="banner"
+  data-section-type="header"
+  data-section-id="sections--21706269524245__header"
+  x-data="ThemeSection_header(1)"
+  x-init="mounted()"
+  data-color-scheme="tertiary"
+  
+  
+    :class="{ 'header-is-active' : menuIsActive }"
+  
+>
+  <div id="headerBorderWrap" class="headerBorderWrap">
+    <div id="headerContainer"
+          class="z-10">
+      <div
+        class="py-2 lg:py-0 px-section overflow-hidden">
+        <div class="flex justify-between items-center">
+          
+          <div class="flex flex-grow w-1/3  justify-start items-stretch">
+
+            
+              <div class="flex items-center z-10"><button
+  class="font-main uppercase js-enabled inline-block -m-1 p-1 lg:hidden"
+  type="button"
+  x-bind:aria-expanded="$store.modals.leftDrawer.contents === 'nav'"
+  @click="$store.modals.open('nav')"
+  data-menu-drawer-toggle>
+
+  <span class="">Menu</span></button>
+<noscript>
+  <div class="no-js-focus-wrapper">
+    <button
+      class="inline-block -m-1 p-1 lg:hidden"
+      type="button"
+      data-menu-drawer-toggle>
+      <span class="">Menu</span></button>
+    <div class="hidden no-js-focus-container absolute left-0 bottom-0 w-11/12 md:w-7/12 lg:w-5/12 py-section-vertical-spacing px-section transform translate-y-[calc(100%-var(--section-border-thickness))] z-100  max-h-three-quarters-screen-height overflow-hidden overflow-y-auto bg-scheme-accent-1  text-scheme-accent-1-overlay"><div
+    class="sidebar-nav "
+  >
+  <div class="relative flex items-center justify-between pb-5">
+    <h2 class="sr-only" class="" tabindex="-1">
+      Main menu
+    </h2>
+  </div>
+  <ul class="mt-5">
+    
+      
+      
+      <li class="text-lg lg:text-xl" style="--first-delay-tap: 0;">
+        
+        <a class="block font-heading py-2.5" href="/bevonda/">
+          Home
+        </a>
+      
+      </li>
+    
+      
+      
+      <li class="text-lg lg:text-xl" style="--first-delay-tap: 1;">
+        
+        <a class="block font-heading py-2.5" href="/bevonda/shop.html">
+          Soda
+        </a>
+      
+      </li>
+    
+      
+      
+      <li class="text-lg lg:text-xl" style="--first-delay-tap: 2;">
+        
+        <a class="block font-heading py-2.5" href="/bevonda/products/blood-orange.html">
+          Sparkling Fruit
+        </a>
+      
+      </li>
+    
+      
+      
+      <li class="text-lg lg:text-xl" style="--first-delay-tap: 3;">
+        
+        <a class="block font-heading py-2.5" href="/bevonda/contact.html">
+          Contact
+        </a>
+      
+      </li>
+    
+  </ul>
+
+
+  <div class="mt-5 space-y-5">
+</div>
+
+</div>
+
+    </div>
+  </div>
+</noscript>
+<div x-data>
+  <div>
+    
+<template data-should-teleport="#left-drawer-slot">
+  <div
+    :data-modal-label="$store.modals.leftDrawer.contents === 'nav' "
+    x-show="$store.modals.leftDrawer.contents === 'nav'"
+    class="sidebar-nav py-5 px-section "
+  >
+    <div class="relative flex items-center justify-between pb-5">
+      <h2 class="sr-only" class="" tabindex="-1">
+        Main menu
+      </h2>
+      <button @click.prevent="$store.modals.close('nav')" class="block top-0">
+        <span class="sr-only">Close (esc)</span>
+        <span class="inline-block w-5 h-5"><svg class="theme-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M46 2L2 46" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 46L2 2" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+      </button>
+    </div>
+    <ul class="mt-5">
+      
+        
+        
+        <li class="text-lg lg:text-xl" style="--first-delay-tap: 0;">
+          
+          <a class="block font-heading py-2.5" href="/bevonda/">
+            Home
+          </a>
+        
+        </li>
+      
+        
+        
+        <li class="text-lg lg:text-xl" style="--first-delay-tap: 1;">
+          
+          <a class="block font-heading py-2.5" href="/bevonda/shop.html">
+            Soda
+          </a>
+        
+        </li>
+      
+        
+        
+        <li class="text-lg lg:text-xl" style="--first-delay-tap: 2;">
+          
+          <a class="block font-heading py-2.5" href="/bevonda/products/blood-orange.html">
+            Sparkling Fruit
+          </a>
+        
+        </li>
+      
+        
+        
+        <li class="text-lg lg:text-xl" style="--first-delay-tap: 3;">
+          
+          <a class="block font-heading py-2.5" href="/bevonda/contact.html">
+            Contact
+          </a>
+        
+        </li>
+      
+    </ul>
+
+
+    <div class="mt-5 space-y-5">
+<form class="relative mt-10 max-w-2xl mx-auto block" action="/search.html" method="get" role="search">
+        <label for="Search" class="visually-hidden">
+          Search
+        </label>
+        <input type="search"
+              name="q"
+              id="Search"
+              class="pr-12 placeholder-current input w-full"
+              value=""
+              placeholder="Search">
+        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 p-1" type="submit" class="button">
+          <span class="inline-block w-5 h-5"><svg class="theme-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2 21.1304C2 26.2041 4.01552 31.07 7.60317 34.6577C11.1908 38.2453 16.0567 40.2609 21.1304 40.2609C26.2041 40.2609 31.07 38.2453 34.6577 34.6577C38.2453 31.07 40.2609 26.2041 40.2609 21.1304C40.2609 16.0567 38.2453 11.1908 34.6577 7.60317C31.07 4.01552 26.2041 2 21.1304 2C16.0567 2 11.1908 4.01552 7.60317 7.60317C4.01552 11.1908 2 16.0567 2 21.1304V21.1304Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 46L34.6576 34.6576" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  </span>
+          <span class="visually-hidden">Search</span>
+        </button>
+      </form></div>
+
+  </div>
+</template>
+
+  </div>
+</div></div>
+            
+
+            
+            
+              <div class="hidden lg:block">
+                
+  <nav role="navigation">
+    <ul  x-ref="navigation" class="flex flex-wrap -mx-2.5 justify-start items-center text-base uppercase ">
+        <li class="inline-block no-js-focus-wrapper h-full">
+            <a  href="/bevonda/" class="font-main px-2.5 py-5 flex items-center transition uppercase">
+              Home
+            </a>
+          
+        </li>
+      
+        <li class="inline-block no-js-focus-wrapper h-full">
+            <button class="items-stretch h-full relative font-main px-2.5 py-5 flex items-center transition uppercase"
+              :class="{'text-scheme-accent-1-overlay': menuOpen.menu0 }"
+              @click="openMenu(0)"
+              x-bind:aria-expanded="menuOpen.menu0"
+              aria-controls="menu0">
+              <span x-cloak :class="{'opacity-100': menuOpen.menu0, 'opacity-0': !menuOpen.menu0, 'h-screen  -translate-y-1/2': !navWrapped }" class="bg-scheme-accent-1 absolute inset-0 z-0 pointer-events-none" ></span>
+              <span class="flex h-full items-center relative text-left">
+                <span class="inline-block pr-1">Soda</span>
+                <span class="inline-block w-2 h-2 align-middle svg-scale mr-1 transform origin-center rotate transition-transform duration-150 ml-1" :class="{'rotate-180': menuOpen.menu0}"><svg class="theme-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  </span>
+              </span>
+            </button>
+            <div class="no-js-focus-container absolute left-0 bottom-0 w-full py-section-vertical-spacing px-section transform translate-y-[calc(100%-var(--drop-down-offset))] z-100  max-h-three-quarters-screen-height overflow-hidden overflow-y-auto bg-scheme-accent-1 text-scheme-accent-1-overlay"
+                  id="menu0"
+                  x-cloak
+                  x-show="menuOpen.menu0"
+                  x-transition:enter="transition ease duration-200"
+                  x-transition:enter-start="opacity-0"
+                  x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition ease duration-00"
+                  x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0"
+                  data-header-dropdown
+                  @focusout="focusOut($event, 'menu0')"
+                  @click.away.prevent="menuOpen.menu0 = false">
+
+
+<ul class="grid grid-cols-1 lg:grid-cols-12 lg:gap-10 grid-flow-row-dense"><li class="lg:col-span-2">
+      <a href="/bevonda/products/ginger-beer.html"><div class="">
+            <img src="/bevonda/images/BevondaGingerBeer1.jpg" alt="Ginger Beer" srcset="/bevonda/images/BevondaGingerBeer1.jpg" width="700" height="700" class="media-style">
+          </div><div class="mt-2 text-center">
+          Ginger Beer
+        </div>
+      </a>
+    </li><li class="lg:col-span-2">
+      <a href="/bevonda/products/shirley-temple.html"><div class="">
+            <img src="/bevonda/images/BevondaShirleyTemple1.jpg" alt="Shirley Temple" srcset="/bevonda/images/BevondaShirleyTemple1.jpg" width="700" height="700" class="media-style">
+          </div><div class="mt-2 text-center">
+          Shirley Temple
+        </div>
+      </a>
+    </li><li class="lg:col-span-2">
+      <a href="/bevonda/products/root-beer.html"><div class="">
+            <img src="/bevonda/images/BevondaRootBeer1.jpg" alt="Root Beer" srcset="/bevonda/images/BevondaRootBeer1.jpg" width="700" height="700" class="media-style">
+          </div><div class="mt-2 text-center">
+          Root Beer
+        </div>
+      </a>
+    </li></ul>
+<div class="mt-5 text-center"></div>
+
+            </div>
+          
+        </li>
+      
+        <li class="inline-block no-js-focus-wrapper h-full">
+            <a  href="/bevonda/products/blood-orange.html" class="font-main px-2.5 py-5 flex items-center transition uppercase">
+              Sparkling Fruit
+            </a>
+          
+        </li>
+      
+        <li class="inline-block no-js-focus-wrapper h-full">
+            <a aria-current="page" href="/bevonda/contact.html" class="font-main px-2.5 py-5 flex items-center transition uppercase">
+              Contact
+            </a>
+          
+        </li>
+      
+    </ul>
+  </nav>
+
+              </div>
+            
+          </div>
+
+          
+          
+            <div class="flex justify-center text-center flex-grow lg:flex-grow-0 lg:w-auto ">
+              
+                <div class="h1 font-heading font-heading text-xl lg:text-3xl py-2.5">
+      
+      <a href="/bevonda/" class="site-header__logo-link inline w-full">
+        <div  style="max-width: 260px;">
+          <img
+            src="/bevonda/images/BevondaBlueLogoStraight_800x300_50c0aab8-8bc0-4088-b498-4ad3681b03e6.png"
+            srcset="/bevonda/images/BevondaBlueLogoStraight_800x300_50c0aab8-8bc0-4088-b498-4ad3681b03e6.png"
+            alt="Bevonda"
+            width="800"
+            height="300"
+            loading="eager"
+            
+              class="text-transparent"
+            
+          >
+          
+        </div>
+      </a>
+    
+</div>
+              
+              
+            </div>
+          
+
+          
+          <div class="flex flex-grow w-1/3 items-center justify-end">
+            
+
+            
+
+            
+
+            <div class="hidden lg:block h-full">
+              
+
+            </div>
+
+            
+              <a data-open-search x-ref="search" @click.prevent="openSearch()" @keydown.space="openSearch()" href="/bevonda/search.html" class="hidden lg:block font-main px-2.5 py-5 flex items-center transition uppercase">
+                
+                <span class="visually-hidden">Search our site</span><span>Search</span>
+              </a>
+              <div
+                class="absolute top-0 left-0 right-0 bottom-0 w-full flex items-center bg-scheme-background text-scheme-text z-20 px-section"
+                x-cloak
+                x-show="searchOpen"
+                x-transition:enter="transition ease duration-200"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease duration-00"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                @click.away.prevent="searchOpen = false"
+                data-header-search
+                >
+                <div class="w-full" x-data='ThemeComponent_PredictiveSearch("product,collection,article,page")' x-init="mounted()" @focusOut="onFocusOut" @keyup="onKeyup" @keydown="onKeydown" >
+                  <form x-ref="searchForm" action="/search.html" method="get" role="search"  @submit="onFormSubmit" @click.away.prevent="searchOpen = false">
+    <div x-ref="searchFieldComponent" class="relative py-2" >
+      <input
+        id="header-search"
+        type="search"
+        name="q"
+        value=""
+        class="header-search-input pl-9 py-2 placeholder:text-scheme-text font-secondary w-full border-0 shadow-none bg-transparent"
+        placeholder="Search"aria-expanded="false"
+          aria-owns="predictive-search-results-list"
+          aria-controls="predictive-search-results-list"
+          aria-autocomplete="list"
+          autocorrect="off"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          x-ref="input"
+          x-model="rawQuery"
+          @input.debounce.300="onChange"
+          @focus="onFocus">
+      <label class="visually-hidden" for="header-search">Search</label>
+      <input type="hidden" name="options[prefix]" value="last"><button class="absolute left-0 top-1/2 transform -translate-y-1/2 p-1" aria-label="Search">
+        <span class="inline-block w-6 h-6"><svg class="theme-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2 21.1304C2 26.2041 4.01552 31.07 7.60317 34.6577C11.1908 38.2453 16.0567 40.2609 21.1304 40.2609C26.2041 40.2609 31.07 38.2453 34.6577 34.6577C38.2453 31.07 40.2609 26.2041 40.2609 21.1304C40.2609 16.0567 38.2453 11.1908 34.6577 7.60317C31.07 4.01552 26.2041 2 21.1304 2C16.0567 2 11.1908 4.01552 7.60317 7.60317C4.01552 11.1908 2 16.0567 2 21.1304V21.1304Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 46L34.6576 34.6576" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  </span>
+      </button>
+      <button x-cloak @click="close()" class="block p-1 absolute right-0 top-1/2 transform -translate-y-1/2" type="button">
+        <span class="visually-hidden">Close (esc)</span>
+        <span class="inline-block w-6 h-6"><svg class="theme-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M46 2L2 46" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 46L2 2" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+      </button>
+    </div><div id="predictiveSearchResults" tabindex="-1" x-cloak class="text-scheme-text absolute left-0 right-0 h-screen z-40">
+      <div
+        x-show="resultsOpen"
+        class="absolute left-0 right-0 h-screen z-50 bg-scheme-text/75"
+        @click="close()"
+      ></div>
+      <template x-if="loading && !results">
+        <div class="bg-scheme-background relative z-50">
+          <div class="w-6 h-6 pt-12 pb-12 mx-auto" data-predictive-loading>
+            <div class="loading"></div>
+          </div>
+        </div>
+      </template>
+      <template x-if="resultsOpen">
+        <div x-show="resultsOpen" class="max-h-three-quarters-screen-height overflow-hidden overflow-y-auto bg-scheme-background pb-5 lg:pb-10 px-section scroll-pb-5 lg:scroll-pb-10 relative z-50" x-ref="results">
+        </div>
+      </template>
+    </div>
+    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span></form>
+                </div>
+              </div>
+            
+
+            <div class="flex items-center justify-end  -mr-2.5  h-full">
+              
+    <a
+      class="whitespace-nowrap font-main px-2.5 py-5 flex items-center transition uppercase"
+      href="/bevonda/cart"
+    >
+      
+Cart (<span  x-text="$store.cart_count.count">0</span>)
+    <span class="visually-hidden">items</span>
+    </a>
+  
+
+            </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<noscript>
+  <style>
+    .no-js-focus-wrapper:focus-within > .no-js-focus-container {
+      display: block !important;
+    }
+  </style>
+</noscript>
+
+
+  <style>
+    .logo-image {
+      display: block;
+      max-width: 260px;
+    }
+  </style>
+
+<script src="/bevonda/cdn/shop/t/2/assets/modules-predictive-search.bundle.min.js" type="module"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Bevonda",
+  
+    
+    "logo": "https:\/\/www.drinkbevonda.com\/cdn\/shop\/files\/BevondaBlueLogoStraight_800x300_50c0aab8-8bc0-4088-b498-4ad3681b03e6.png",
+  
+  "sameAs": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "url": "https:\/\/www.drinkbevonda.com\/pages\/contact"
+}
+</script>
+
+
+
+
+
+<style> #shopify-section-sections--21706269524245__header header a[href*="/cart"], #shopify-section-sections--21706269524245__header .header__icon--cart, #shopify-section-sections--21706269524245__header .cart-count-bubble, #shopify-section-sections--21706269524245__header #cart-icon-bubble {display: none !important;} </style></div>
+<!-- END sections: header-group --><script>
+  const calculateHeaderHeights = () => {
+    const headerGroupHeights = [];
+
+    document
+      .querySelectorAll(
+        '.shopify-section-group-header-group:not(.has-no-height)'
+      )
+      .forEach((headerGroupSectionEl) => {
+        headerGroupHeights.push(
+          headerGroupSectionEl.getBoundingClientRect().height
+        );
+      });
+
+    document.documentElement.style.setProperty(
+      '--header-group-height',
+      `${headerGroupHeights.reduce((subtotal, a) => subtotal + a, 0)}px`
+    );
+  };
+
+  calculateHeaderHeights();
+
+  const debouncedCalculateHeaderHeights = debounce(calculateHeaderHeights, 300);
+
+  window.addEventListener('resize', debouncedCalculateHeaderHeights);
+</script>
+
+<style>
+  #MainContent
+    > .shopify-section.banner-section:first-child
+    .banner-section-content--pt.pt-screen-height {
+    padding-top: calc(100vh - var(--header-group-height));
+  }
+
+  #MainContent
+    > .shopify-section.banner-section:first-child
+    .banner-section-content--h.h-screen {
+    height: calc(100vh - var(--header-group-height));
+  }
+
+  @media (min-width: 990px) {
+    #MainContent
+      > .shopify-section.banner-section:first-child
+      .banner-section-content--h.lg\:h-screen {
+      height: calc(100vh - var(--header-group-height));
+    }
+
+    #MainContent
+      > .shopify-section.banner-section:first-child
+      .banner-section-content--h.lg\:h-auto {
+      height: auto;
+    }
+
+    #MainContent
+      > .shopify-section.banner-section:first-child
+      .banner-section-content--h.lg\:h-full {
+      height: 100%;
+    }
+  }
+</style>
+
+      <main id="MainContent" class="overflow-hidden">
+        <div id="shopify-section-template--21706269294869__main" class="shopify-section">
+<section class="text-scheme-text bg-scheme-background relative overflow-hidden  " data-color-scheme="secondary" >
+
+  <div class="section-content py-section-vertical-spacing px-section max-w-2xl mx-auto">
+
+    <div class="">
+      <div class="">
+
+        <h1 class="text-center font-heading  heading-feature heading-style none">Contact</h1>
+
+        <div class="rte mt-5">
+          
+        </div>
+
+
+        <div class="mt-5"><form method="post" action="/contact#ContactForm" id="ContactForm" accept-charset="UTF-8" class="outline-none"><input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" />
+            
+            
+            <div class="lg:grid lg:grid-cols-2 lg:gap-4">
+              <div>
+                <label class="mt-5 mb-1 block font-secondary text-sm" for="ContactFormName">Name</label>
+                <input type="text"
+                  class="w-full input"
+                  name="contact[name]"
+                  id="ContactFormName"
+                  value=""
+                  required
+                  aria-required="true">
+              </div>
+              <div>
+                <label class="mt-5 mb-1 block font-secondary text-sm" for="ContactFormEmail">Email</label>
+                <input type="email"
+                  name="contact[email]"
+                  id="ContactFormEmail"
+                  class="w-full input "
+                  value=""
+                  spellcheck="false"
+                  autocomplete="off"
+                  autocapitalize="off"
+                  required
+                  aria-required="true">
+              </div>
+            </div>
+      
+            <label class="mt-5 mb-1 block font-secondary text-sm" for="ContactFormPhone">Phone Number</label>
+            <input type="tel"
+              name="contact[phone]"
+              id="ContactFormPhone"
+              class="w-full input"
+              value=""
+              pattern="[0-9\-]*">
+      
+            <label class="mt-5 mb-1 block font-secondary text-sm" for="ContactFormMessage">Message</label>
+            <textarea rows="10"
+              name="contact[body]"
+              id="ContactFormMessage"
+              required
+              aria-required="true"
+              class="w-full input"></textarea>
+            
+            <div class="push-btn w-full mt-5">
+              <input type="submit" class="push-btn-surface w-full" value="Send">
+            </div>
+          
+          </form>
+        </div>
+
+
+      </div>
+      
+    </div>
+  </div></section>
+
+<div x-data="ThemeComponent_ShapeDivider" x-init="mounted()" id="shape-divider-shape_divider_gcRpKA" class="shape-divider w-full   pointer-events-none z-20 absolute top-0 left-0 w-full" >
+  <div class="shape-divider-transform-reset">
+    <div x-ref="animation-container" class="shape-divider-svg-container flex relative left-0 min-w-full animate  -mt-shape-divider"  style="padding-top: 7.0%;"><div class=" z-0 absolute top-0 left-0 right-0 bottom-0 text-scheme-background h-full w-full text-scheme-background">
+        <svg class="z-0 absolute top-0 left-0  right-0 bottom-0 text-scheme-background h-full w-full text-scheme-background  " data-color-scheme="tertiary" width="100%" height="100%" viewBox="0 0 1200.0 84.0" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M600 39.1293C800 84.6351 1000 84.6351 1200 39.1294V84.0001H0L3.48561e-06 39.1293C200 -6.37645 400 -6.37643 600 39.1293Z" fill="currentColor"/>
+          <path class="shape-divider-stroke" vector-effect="non-scaling-stroke" d="M1201 39.1294C1001 84.6351 801 84.6351 601 39.1293C401 -6.37643 201 -6.37645 1 39.1293" stroke="black"/></svg>
+      </div><div class=" translate-x-[99.95%]  z-0 absolute top-0 left-0 right-0 bottom-0 text-scheme-background h-full w-full text-scheme-background">
+        <svg class="z-0 absolute top-0 left-0  right-0 bottom-0 text-scheme-background h-full w-full text-scheme-background   -scale-x-[1] " data-color-scheme="tertiary" width="100%" height="100%" viewBox="0 0 1200.0 84.0" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M600 39.1293C800 84.6351 1000 84.6351 1200 39.1294V84.0001H0L3.48561e-06 39.1293C200 -6.37645 400 -6.37643 600 39.1293Z" fill="currentColor"/>
+          <path class="shape-divider-stroke" vector-effect="non-scaling-stroke" d="M1201 39.1294C1001 84.6351 801 84.6351 601 39.1293C401 -6.37643 201 -6.37645 1 39.1293" stroke="black"/></svg>
+      </div></div>
+  </div>
+</div>
+
+<style>
+#shape-divider-shape_divider_gcRpKA svg {
+  transform: translate3d(0, 0, 0) scaleX(1) scaleY(-1);
+}
+
+#shape-divider-shape_divider_gcRpKA svg:nth-child(2) {
+  transform: translate3d(0, 0, 0) scaleX(1) scaleY(-1) translateX(100%);
+}#shopify-section-template--21706269294869__main > section {
+  padding-top: 7.0%;
+}</style>
+
+
+
+  <script src="/bevonda/cdn/shop/t/2/assets/block-shape-divider.js" type="module"></script>
+
+
+<link href="/bevonda/cdn/shop/t/2/assets/block-shape-divider.css" rel="stylesheet" type="text/css" media="all" /></div><div id="shopify-section-template--21706269294869__pattern_marquee_WC4Cbp" class="shopify-section">
+<section class="text-scheme-text bg-scheme-background " data-color-scheme="secondary">
+  <div class="relative text-0">
+    <scrolling-items-container class="block">
+      <scrolling-items
+        style="
+          --base-scrolling-items-speed: 9s;
+          --local-scrolling-items-speed-multiplier: 1;
+          --scrolling-items-speed: calc(
+          var(--base-scrolling-items-speed) * var(--global-scrolling-items-speed-multiplier) *
+          var(--local-scrolling-items-speed-multiplier)
+          );
+          --scrolling-items-direction: ;
+          "
+        class="js-enabled block w-max whitespace-nowrap motion-safe:animate-[scrolling-items_var(--scrolling-items-speed)_linear_infinite_var(--scrolling-items-direction)] motion-safe:hover:[animation-play-state:paused]   motion-reduce:block motion-reduce:-translate-x-1/4 motion-reduce:whitespace-normal motion-reduce:px-section-horizontal-spacing motion-reduce:text-center"
+      >
+        <scrolling-items-surface class="flex flex-wrap lg:flex-nowrap items-center justify-center -mt-5 lg:mt-0 lg:-mx-5">
+          <scrolling-items-content class="grow-0 shrink-0">
+            <span style="width: 42px; height: 42px;" class="inline-block bg-yellow-500 pattern-template--21706269294869__pattern_marquee_WC4Cbp marquee-container"></span>
+          </scrolling-items-content>
+        </scrolling-items-surface>
+      </scrolling-items>
+    </scrolling-items-container>
+    <noscript>
+      <div id="marquee-template--21706269294869__pattern_marquee_WC4Cbp">
+        <span style="width: 12600px; height: 42px;" class="inline-block  bg-yellow-500 pattern-template--21706269294869__pattern_marquee_WC4Cbp marquee-container"></span>
+      </div>
+
+      <style>
+        @media (prefers-reduced-motion: no-preference) {
+          .pattern-template--21706269294869__pattern_marquee_WC4Cbp {
+            -webkit-backface-visibility: hidden;
+            animation: shift 80s linear infinite ;
+          }
+        }
+      </style>
+    </noscript>
+  </div>
+</section>
+
+<style>
+  .pattern-template--21706269294869__pattern_marquee_WC4Cbp {
+    -webkit-mask-size: 42px;
+    mask-size: 42px;
+    background: rgb(var(--color-scheme-text));-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='3' fill='black'/%3E%3C/svg%3E%0A");
+    mask-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='3' fill='black'/%3E%3C/svg%3E%0A");}
+</style>
+
+<link href="/bevonda/cdn/shop/t/2/assets/section-marquee.css" rel="stylesheet" type="text/css" media="all" />
+
+
+  <script src="/bevonda/cdn/shop/t/2/assets/scrolling-items.js" type="module"></script>
+
+
+
+</div>
+      </main><!-- BEGIN sections: footer-group -->
+<div id="shopify-section-sections--21706269491477__footer" class="shopify-section shopify-section-group-footer-group section-footer mt-auto">
+<footer class="relative text-scheme-text bg-scheme-background py-section-vertical-spacing px-section bg-scheme-gradient" data-color-scheme="primary" data-section-id="sections--21706269491477__footer" data-section-type="footer">
+
+  <div class="section-content relative z-10 max-w-site mx-auto">
+
+    
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-theme py-section-vertical-spacing"><div class="lg:col-span-4 space-y-5"><div class="rte ">
+                <p>ENJOY WITH FRIENDS!</p>
+              </div><ul class="flex flex-wrap -mx-2 -mt-2 justify-start lg:justify-start">
+  
+
+    
+    
+      
+        <li class="mx-2 mt-2">
+          <a class="fill-current hover:text--accent-1" href="https://facebook.com/DrinkBevonda" target="_blank">
+            <span class="inline-block w-5 h-5" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" class="icon fill-current icon-facebook" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11.9998 2.0368C6.47711 2.0368 2 6.51391 2 12.0366C2 16.7261 5.22874 20.6612 9.58425 21.742V15.0925H7.52229V12.0366H9.58425V10.7198C9.58425 7.3163 11.1246 5.73873 14.4662 5.73873C15.0997 5.73873 16.1929 5.86313 16.6401 5.98713V8.75707C16.4041 8.73227 15.9941 8.71987 15.4849 8.71987C13.8454 8.71987 13.2118 9.34106 13.2118 10.9558V12.0366H16.4781L15.9169 15.0925H13.2118V21.9632C18.1633 21.3652 22 17.1493 22 12.0366C21.9996 6.51391 17.5225 2.0368 11.9998 2.0368Z" fill="currentColor"/>
+</svg>
+</span>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      
+    
+  
+
+    
+    
+      
+        <li class="mx-2 mt-2">
+          <a class="fill-current hover:text--accent-1" href="https://twitter.com/DrinkBevonda" target="_blank">
+            <span class="inline-block w-5 h-5" aria-hidden="true"><svg aria-hidden="true" focusable="false" class="icon fill-current icon-twitter" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7512 2.96092H20.818L14.1179 10.6186L22 21.0391H15.8284L10.9946 14.7191L5.46359 21.0391H2.39494L9.5613 12.8483L2 2.96092H8.32828L12.6976 8.73759L17.7512 2.96092ZM16.6748 19.2034H18.3742L7.4049 4.70013H5.58133L16.6748 19.2034Z" fill="currentColor"/></svg>
+</span>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+      
+    
+  
+
+    
+    
+  
+
+    
+    
+      
+        <li class="mx-2 mt-2">
+          <a class="fill-current hover:text--accent-1" href="https://www.instagram.com/drinkbevonda" target="_blank">
+            <span class="inline-block w-5 h-5" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" class="icon fill-current icon-instagram" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0059 3.80113C14.6783 3.80113 14.9947 3.81285 16.0457 3.85974C17.0225 3.90272 17.5499 4.06681 17.9015 4.20356C18.3665 4.38328 18.7025 4.60207 19.0502 4.9498C19.4018 5.30143 19.6167 5.63352 19.7964 6.09846C19.9332 6.45009 20.0973 6.98144 20.1403 7.95429C20.1871 9.00918 20.1989 9.32565 20.1989 11.9941C20.1989 14.6665 20.1871 14.983 20.1403 16.034C20.0973 17.0107 19.9332 17.5382 19.7964 17.8898C19.6167 18.3548 19.3979 18.6908 19.0502 19.0385C18.6986 19.3901 18.3665 19.605 17.9015 19.7847C17.5499 19.9215 17.0186 20.0856 16.0457 20.1285C14.9908 20.1754 14.6743 20.1871 12.0059 20.1871C9.33346 20.1871 9.01699 20.1754 7.96601 20.1285C6.98925 20.0856 6.46181 19.9215 6.11018 19.7847C5.64524 19.605 5.30924 19.3862 4.96151 19.0385C4.60988 18.6869 4.395 18.3548 4.21527 17.8898C4.07853 17.5382 3.91443 17.0068 3.87146 16.034C3.82457 14.9791 3.81285 14.6626 3.81285 11.9941C3.81285 9.32174 3.82457 9.00527 3.87146 7.95429C3.91443 6.97753 4.07853 6.45009 4.21527 6.09846C4.395 5.63352 4.61379 5.29752 4.96151 4.9498C5.31314 4.59816 5.64524 4.38328 6.11018 4.20356C6.46181 4.06681 6.99316 3.90272 7.96601 3.85974C9.01699 3.81285 9.33346 3.80113 12.0059 3.80113ZM12.0059 2C9.29048 2 8.95057 2.01172 7.88396 2.05861C6.82125 2.10549 6.09064 2.2774 5.4577 2.52354C4.79742 2.7814 4.23872 3.12131 3.68392 3.68002C3.12522 4.23481 2.78531 4.79351 2.52745 5.44989C2.2813 6.08674 2.1094 6.81344 2.06251 7.87615C2.01563 8.94667 2.00391 9.28658 2.00391 12.002C2.00391 14.7173 2.01563 15.0572 2.06251 16.1239C2.1094 17.1866 2.2813 17.9172 2.52745 18.5501C2.78531 19.2104 3.12522 19.7691 3.68392 20.3239C4.23872 20.8787 4.79742 21.2225 5.4538 21.4765C6.09064 21.7226 6.81734 21.8945 7.88005 21.9414C8.94667 21.9883 9.28657 22 12.0019 22C14.7173 22 15.0572 21.9883 16.1238 21.9414C17.1866 21.8945 17.9172 21.7226 18.5501 21.4765C19.2065 21.2225 19.7652 20.8787 20.32 20.3239C20.8748 19.7691 21.2186 19.2104 21.4725 18.554C21.7187 17.9172 21.8906 17.1905 21.9375 16.1278C21.9844 15.0611 21.9961 14.7212 21.9961 12.0059C21.9961 9.29049 21.9844 8.95058 21.9375 7.88396C21.8906 6.82125 21.7187 6.09064 21.4725 5.45771C21.2264 4.79351 20.8865 4.23481 20.3278 3.68002C19.773 3.12522 19.2143 2.7814 18.5579 2.52745C17.9211 2.2813 17.1944 2.1094 16.1317 2.06251C15.0611 2.01172 14.7212 2 12.0059 2ZM12.0059 6.86423C9.16937 6.86423 6.86814 9.16546 6.86814 12.002C6.86814 14.8384 9.16937 17.1397 12.0059 17.1397C14.8423 17.1397 17.1436 14.8384 17.1436 12.002C17.1436 9.16546 14.8423 6.86423 12.0059 6.86423ZM12.0059 15.3346C10.1657 15.3346 8.67317 13.8422 8.67317 12.002C8.67317 10.1618 10.1657 8.66927 12.0059 8.66927C13.8461 8.66927 15.3385 10.1618 15.3385 12.002C15.3385 13.8422 13.8461 15.3346 12.0059 15.3346ZM17.3467 7.86048C18.007 7.86048 18.5462 7.32522 18.5462 6.66103C18.5462 6.00074 18.007 5.46157 17.3467 5.46157C16.6865 5.46157 16.1473 5.99683 16.1473 6.66103C16.1473 7.32131 16.6825 7.86048 17.3467 7.86048Z" fill="currentColor"/>
+</svg>
+</span>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+</ul>
+</div><div class="lg:col-span-4 space-y-5"><div class="flex justify-start gap-10 lg:justify-end">
+              <div class="grow w-full">
+                
+                
+                <ul class="list-none space-y-2.5">
+                  
+                    <li>
+                      <a href="/bevonda/" class="hover:text-scheme-accent-1 break-words">
+                        Home
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/bevonda/shop.html" class="hover:text-scheme-accent-1 break-words">
+                        Soda
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/bevonda/products/blood-orange.html" class="hover:text-scheme-accent-1 break-words">
+                        Sparkling Fruit
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/bevonda/contact.html" class="hover:text-scheme-accent-1 break-words">
+                        Contact
+                      </a>
+                    </li>
+                  
+                </ul>
+              </div>
+              <div class="grow w-full">
+                
+                
+                <ul class="list-none space-y-2.5">
+                  
+                    <li>
+                      <a href="/bevonda/search.html" class="hover:text-scheme-accent-1">
+                        Search
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/bevonda/branding.html" class="hover:text-scheme-accent-1">
+                        Branding
+                      </a>
+                    </li>
+                  
+                </ul>
+              </div></div></div></div>
+
+    <div class="text-scheme-text md:flex justify-between section-content-top-margin">
+
+      <div class="">
+        <p class="text-sm">&copy; 2026, <a href="/bevonda/" title="">Bevonda</a>. <span class="ml-2 inline-block"><a target="_blank" rel="nofollow" href="https://www.shopify.com">Powered by Shopify</a></span></p>
+      </div>
+          <div class="mt-10 lg:mt-0  ">
+            <h2 class="visually-hidden">Accepted Payments</h2>
+            <ul class="payment-icons -mx-2 ">
+              
+                <li class="inline-block mx-2 w-8">
+                  <svg class="icon payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg>
+                </li>
+              
+                <li class="inline-block mx-2 w-8">
+                  <svg class="icon payment-icon" viewBox="0 0 38 24" width="38" height="24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-venmo"><title id="pi-venmo">Venmo</title><g fill="none" fill-rule="evenodd"><rect fill-opacity=".07" fill="#000" width="38" height="24" rx="3"/><path fill="#3D95CE" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+
+                </li>
+              
             </ul>
-            <div class="nav-icons">
-                <a href="search.html">🔍</a>
-                <a href="cart.html">🛒 <span class="cart-count">0</span></a>
-            </div>
+          </div>
+        
+</div>
+
+  </div>
+
+</footer>
+
+
+  <script src="/bevonda/cdn/shop/t/2/assets/sections-footer.bundle.min.js" type="module"></script>
+
+
+
+</div>
+<!-- END sections: footer-group --><!-- BEGIN sections: overlay-group -->
+
+<!-- END sections: overlay-group --><div id="screenreader-announce" class="sr-only" aria-live="polite" role="status"></div>
+
+      <ul hidden>
+        <li id="a11y-refresh-page-message">Choosing a selection results in a full page refresh.</li>
+        <li id="a11y-selection-message">Press the space key then arrow keys to make a selection.</li>
+      </ul>
+
+      
+      <aside x-data>
+  <template x-teleport="body">
+    <div
+      x-show="$store.modals.leftDrawer.open"
+      @keydown.escape.prevent.stop="$store.modals.close('leftDrawer')"
+      @click="$store.modals.close('leftDrawer')"
+      class="fixed inset-0 z-50"
+      data-color-scheme="primary"
+      id="modals-leftDrawer"
+      @left-drawer-is-open.window="setTimeout(() => { $focus.first() }, 120)"
+    >
+      <div x-show="$store.modals.leftDrawer.open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 bg-scheme-text/75"
+       ><!-- Overlay --></div>
+      <div
+        x-show="$store.modals.leftDrawer.open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="-translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="-translate-x-full"
+        class="h-full w-full drawer-transition-host"
+      >
+        <div
+          @click.stop
+          x-trap.noscroll.inert="$store.modals.leftDrawer.open"
+          class="relative w-11/12 md:w-7/12 lg:w-5/12 h-full bg-scheme-background text-scheme-text mr-auto overflow-y-auto border-r-section border-border"
+          id="left-drawer-slot"
+          role="dialog"
+          aria-modal="true"
+          :aria-label="getModalLabel('leftDrawer', $el)"
+          tabindex="-1"
+        >
+          <!-- Modal content is teleported here -->
         </div>
-    </nav>
-
-    <div class="page-header">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you!</p>
+      </div>
     </div>
+  </template>
+</aside>
 
-    <div class="content">
-        <form onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you soon.');">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Send Message</button>
-        </form>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section"><h3>BEVONDA</h3><p>Handcrafted Soda Made With Pure Cane Sugar</p></div>
-            <div class="footer-section">
-                <h3>Shop</h3>
-                <ul class="footer-links">
-                    <li><a href="shop.html">All Products</a></li>
-                    <li><a href="product-ginger-beer.html">Ginger Beer</a></li>
-                    <li><a href="product-shirley-temple.html">Shirley Temple</a></li>
-                    <li><a href="product-root-beer.html">Root Beer</a></li>
-                    <li><a href="product-blood-orange.html">Blood Orange</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Company</h3>
-                <ul class="footer-links">
-                    <li><a href="branding.html">Branding</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+      <aside x-data>
+  <template x-teleport="body">
+    <div
+      x-show="$store.modals.rightDrawer.open"
+      @keydown.escape.prevent.stop="$store.modals.close('rightDrawer')"
+      @click="$store.modals.close('rightDrawer')"
+      class="fixed inset-0 z-50"
+      data-color-scheme="primary"
+      id="modals-rightDrawer"
+      @right-drawer-is-open.window="setTimeout(() => { $focus.first() }, 120)"
+    >
+      <div x-show="$store.modals.rightDrawer.open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 bg-scheme-text/75"
+       ><!-- Overlay --></div>
+      <div
+        x-show="$store.modals.rightDrawer.open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="h-full w-full"
+      >
+        <div
+          @click.stop
+          x-trap.noscroll.inert="$store.modals.rightDrawer.open"
+          class="relative w-11/12 md:w-7/12 lg:w-5/12 h-full bg-scheme-background ml-auto overflow-hidden border-l-section border-border"
+          id="right-drawer-slot"
+          role="dialog"
+          aria-modal="true"
+          :aria-label="getModalLabel('rightDrawer', $el)"
+          tabindex="-1"
+        >
+          <!-- Modal content is teleported here -->
         </div>
-        <div class="footer-bottom"><p>&copy; 2026 Bevonda. All rights reserved.</p></div>
-    </footer>
+      </div>
+    </div>
+  </template>
+</aside>
+
+      <aside x-data>
+  <template x-teleport="body">
+    <div
+      x-show="$store.modals.modal.open"
+      @keydown.escape.prevent.stop="$store.modals.close('modal')"
+      class="fixed inset-0 z-40"
+      id="modals-modal"
+      @modal-is-open.window="setTimeout(() => { $focus.first() }, 120)"
+    >
+      <div id="modal-slot"></div>
+    </div>
+  </template>
+</aside>
+
+      <script src="/bevonda/cdn/shop/t/2/assets/modals.js" type="module"></script>
+
+      
+<style> .payment-icon__paypal,.payment-icon__venmo,svg[aria-labelledby*="paypal"],svg[aria-labelledby*="venmo"] {display: none !important;} </style>
+<div id="shopify-block-AZFd6aGFnS21FS1hVa__13768625480086291342" class="shopify-block shopify-app-block"><script>
+  window['ShopifyForms'] = {
+    ...window['ShopifyForms'],
+    currentPageType: "page"
+  };
+</script>
+
+
+</div>
+<script>
+document.getElementById('ContactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const formData = new FormData(this);
+  const data = {
+    name: formData.get('contact[name]'),
+    email: formData.get('contact[email]'),
+    phone: formData.get('contact[phone]'),
+    message: formData.get('contact[body]')
+  };
+  
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    
+    if (response.ok) {
+      alert('Thank you! Your message has been sent.');
+      this.reset();
+    } else {
+      alert('Sorry, there was an error sending your message.');
+    }
+  } catch (error) {
+    alert('Sorry, there was an error sending your message.');
+  }
+});
+</script>
 </body>
-</html>
+  </html>
