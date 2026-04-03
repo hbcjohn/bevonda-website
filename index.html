@@ -44,7 +44,7 @@
   window.Shopify.featureAssets['shop-js'] = {"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"avatar":["modules/v2/loader.avatar.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"]};
 </script>
 
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+
 </script>
 
 
@@ -628,29 +628,11 @@
       if (loaded) return;
       loaded = true;
 
-      window.ShopifyAnalytics.lib = window.trekkie;
+      
 
       var originalDocumentWrite = document.write;
       document.write = customDocumentWrite;
-      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-      document.write = originalDocumentWrite;
-
       
-
-      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
-      var token = match? match[1]: undefined;
-      if (!hasLoggedConversion(token)) {
-        setCookieIfConversion(token);
-        
-      }
-    });
-
-
-        var eventsListenerScript = document.createElement('script');
-        eventsListenerScript.async = true;
-        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-
-})();</script>
 <script
   defer
   data-application="storefront-renderer"
@@ -2686,10 +2668,7 @@ T 3900 115
       
 <style> .payment-icon__paypal,.payment-icon__venmo,svg[aria-labelledby*="paypal"],svg[aria-labelledby*="venmo"] {display: none !important;} </style>
 <div id="shopify-block-AZFd6aGFnS21FS1hVa__13768625480086291342" class="shopify-block shopify-app-block"><script>
-  window['ShopifyForms'] = {
-    ...window['ShopifyForms'],
-    currentPageType: "index"
-  };
+  ;
 </script>
 
 
