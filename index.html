@@ -2052,9 +2052,22 @@ Cart (<span  x-text="$store.cart_count.count">0</span>)
       }
     }
   </style></div>
-  <script src="/cdn/shop/t/2/assets/modules-slideshow.bundle.min.js?v=172217404368932026051712233293" type="module"></script>
-
-<link href="/cdn/shop/t/2/assets/modules-slideshow.bundle.css?v=82183784006912765861712595272" rel="stylesheet" type="text/css" media="all" />
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js" type="module"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" type="text/css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const splideEl = document.querySelector('.splide');
+      if (splideEl) {
+        const options = JSON.parse(splideEl.querySelector('.slideshow-options').textContent || '{}');
+        // Ensure autoScroll extension is loaded
+        if (typeof Splide !== 'undefined' && typeof SplideExtensionAutoScroll !== 'undefined') {
+          options.autoScroll = options.autoScroll || { autoStart: true, speed: 1 };
+          new Splide(splideEl, options).mount({ AutoScroll: SplideExtensionAutoScroll });
+        }
+      }
+    });
+  </script>
 </div></section><svg width="0" height="0" viewBox="0 0 200 200">
   <defs>
     <clipPath id="clip-sticker_KbHXnL" clipPathUnits="objectBoundingBox">
