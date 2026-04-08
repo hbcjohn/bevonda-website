@@ -1,1 +1,10 @@
-/bevonda/* /:splat 301
+# Clean URL redirects for Cloudflare Pages
+/collections/soda /collections/soda.html 200
+/products/blood-orange /products/blood-orange.html 200
+/products/ginger-beer /products/ginger-beer.html 200
+/products/root-beer /products/root-beer.html 200
+/products/shirley-temple /products/shirley-temple.html 200
+/pages/branding /pages/branding.html 200
+/pages/contact /pages/contact.html 200
+/cart /cart.html 200
+/search /search.html 200
