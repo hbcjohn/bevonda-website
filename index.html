@@ -2057,17 +2057,23 @@ Cart (<span  x-text="$store.cart_count.count">0</span>)
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" type="text/css" />
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    function initCarousel() {
       const splideEl = document.querySelector('.splide');
-      if (splideEl) {
-        const options = JSON.parse(splideEl.querySelector('.slideshow-options').textContent || '{}');
-        // Ensure autoScroll extension is loaded
-        if (typeof Splide !== 'undefined' && typeof SplideExtensionAutoScroll !== 'undefined') {
-          options.autoScroll = options.autoScroll || { autoStart: true, speed: 1 };
-          new Splide(splideEl, options).mount({ AutoScroll: SplideExtensionAutoScroll });
-        }
+      if (!splideEl) return;
+      if (typeof Splide === 'undefined' || typeof SplideExtensionAutoScroll === 'undefined') {
+        // Scripts not loaded yet, retry
+        setTimeout(initCarousel, 100);
+        return;
       }
-    });
+      const options = JSON.parse(splideEl.querySelector('.slideshow-options').textContent || '{}');
+      options.autoScroll = options.autoScroll || { autoStart: true, speed: 1 };
+      new Splide(splideEl, options).mount({ AutoScroll: SplideExtensionAutoScroll });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initCarousel);
+    } else {
+      initCarousel();
+    }
   </script>
 </div></section><svg width="0" height="0" viewBox="0 0 200 200">
   <defs>
