@@ -2060,14 +2060,15 @@ Cart (<span  x-text="$store.cart_count.count">0</span>)
     function initCarousel() {
       const splideEl = document.querySelector('.splide');
       if (!splideEl) return;
-      if (typeof Splide === 'undefined' || typeof SplideExtensionAutoScroll === 'undefined') {
-        // Scripts not loaded yet, retry
+      if (typeof Splide === 'undefined') {
         setTimeout(initCarousel, 100);
         return;
       }
       const options = JSON.parse(splideEl.querySelector('.slideshow-options').textContent || '{}');
       options.autoScroll = options.autoScroll || { autoStart: true, speed: 1 };
-      new Splide(splideEl, options).mount({ AutoScroll: SplideExtensionAutoScroll });
+      const AutoScroll = (window.splide && window.splide.Extensions && window.splide.Extensions.AutoScroll) || window.SplideExtensionAutoScroll;
+      const extensions = AutoScroll ? { AutoScroll } : {};
+      new Splide(splideEl, options).mount(extensions);
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initCarousel);
