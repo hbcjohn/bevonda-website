@@ -1096,18 +1096,51 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
         <div class="product-media col-span-full lg:col-span-6">
           <div class="col-span-6">
-            <!-- Main product image -->
-            <div class="product-main-image mb-4">
-              <img id="product-main-img" src="/images/BevondaShirleyTemple1.jpg" alt="Shirley Temple" class="w-full aspect-square object-contain media-style bg-scheme-card" loading="eager">
-            </div>
-            <!-- Thumbnail images -->
-            <div class="flex gap-2.5 mt-2">
-              <button onclick="switchProductImage('/images/BevondaShirleyTemple1.jpg', this)" class="w-20 h-20 aspect-square object-contain media-style bg-scheme-card border-0 p-0 cursor-pointer ring-2 ring-scheme-accent-1" data-thumb>
-                <img src="/images/BevondaShirleyTemple1.jpg" alt="Shirley Temple" class="w-full h-full object-contain">
-              </button>
-              <button onclick="switchProductImage('/images/BevondaShirleyTemple6Pack2.jpg', this)" class="w-20 h-20 aspect-square object-contain media-style bg-scheme-card border-0 p-0 cursor-pointer" data-thumb>
-                <img src="/images/BevondaShirleyTemple6Pack2.jpg" alt="Shirley Temple" class="w-full h-full object-contain">
-              </button>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 relative">
+              <div class="col-span-full hidden lg:block">
+                <ul class="w-full grid grid-cols-4 gap-2.5">
+<li class="product-thumbnail-list-item product-thumbnail-list-item--active relative pb-media-shadow-half pr-media-shadow-half" data-thumb-index="0">
+    <a role="button" class="block media-thumbnail" onclick="switchProductImage('/images/BevondaShirleyTemple1.jpg', this.parentElement); return false;">
+      <div class="media--small relative">
+        <div class="media-style-container ellipse">
+          <div class="object-wrapper aspect-w-1 aspect-h-1 media-content">
+            <img src="/images/BevondaShirleyTemple1.jpg" alt="ShirleyTemple" class="media-style bg-scheme-card">
+          </div>
+          <div class="media-drop-shadow-container">
+            <div class="media-drop-shadow-border w-full h-full"></div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+<li class="product-thumbnail-list-item relative pb-media-shadow-half pr-media-shadow-half" data-thumb-index="1">
+    <a role="button" class="block media-thumbnail" onclick="switchProductImage('/images/BevondaShirleyTemple6Pack2.jpg', this.parentElement); return false;">
+      <div class="media--small relative">
+        <div class="media-style-container ellipse">
+          <div class="object-wrapper aspect-w-1 aspect-h-1 media-content">
+            <img src="/images/BevondaShirleyTemple6Pack2.jpg" alt="ShirleyTemple 6-Pack2" class="media-style bg-scheme-card">
+          </div>
+          <div class="media-drop-shadow-container">
+            <div class="media-drop-shadow-border w-full h-full"></div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
+              </div>
+              <div class="row-start-1 col-span-full min-w-[0]">
+                <div class="product-main-image">
+                  <div class="media-style-container ellipse">
+                    <div class="media-content">
+                      <img id="product-main-img" src="/images/BevondaShirleyTemple1.jpg" alt="Product" class="media-style bg-scheme-card" loading="eager">
+                    </div>
+                    <div class="media-drop-shadow-container">
+                      <div class="media-drop-shadow-border w-full h-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1860,10 +1893,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 
 
 </div><script>
-function switchProductImage(src, thumbEl) {
+function switchProductImage(src, thumbLi) {
   document.getElementById('product-main-img').src = src;
-  document.querySelectorAll('[data-thumb]').forEach(el => el.classList.remove('ring-2', 'ring-scheme-accent-1'));
-  thumbEl.classList.add('ring-2', 'ring-scheme-accent-1');
+  document.querySelectorAll('.product-thumbnail-list-item').forEach(el => el.classList.remove('product-thumbnail-list-item--active'));
+  if (thumbLi) thumbLi.classList.add('product-thumbnail-list-item--active');
 }
 </script>
 </body>
