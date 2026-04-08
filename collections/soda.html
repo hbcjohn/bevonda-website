@@ -755,61 +755,9 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
         </li>
       
         <li class="inline-block no-js-focus-wrapper h-full">
-            <button class="items-stretch h-full relative font-main px-2.5 py-5 flex items-center transition uppercase"
-              :class="{'text-scheme-accent-1-overlay': menuOpen.menu0 }"
-              @click="openMenu(0)"
-              x-bind:aria-expanded="menuOpen.menu0"
-              aria-controls="menu0">
-              <span x-cloak :class="{'opacity-100': menuOpen.menu0, 'opacity-0': !menuOpen.menu0, 'h-screen  -translate-y-1/2': !navWrapped }" class="bg-scheme-accent-1 absolute inset-0 z-0 pointer-events-none" ></span>
-              <span class="flex h-full items-center relative text-left">
-                <span class="inline-block pr-1">Soda</span>
-                <span class="inline-block w-2 h-2 align-middle svg-scale mr-1 transform origin-center rotate transition-transform duration-150 ml-1" :class="{'rotate-180': menuOpen.menu0}"><svg class="theme-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 12L23.2826 36.0527C23.3724 36.1542 23.4826 36.2354 23.6062 36.291C23.7297 36.3467 23.8636 36.3755 23.999 36.3755C24.1345 36.3755 24.2684 36.3467 24.3919 36.291C24.5154 36.2354 24.6257 36.1542 24.7155 36.0527L46 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-  </span>
-              </span>
-            </button>
-            <div class="no-js-focus-container absolute left-0 bottom-0 w-full py-section-vertical-spacing px-section transform translate-y-[calc(100%-var(--drop-down-offset))] z-100  max-h-three-quarters-screen-height overflow-hidden overflow-y-auto bg-scheme-accent-1 text-scheme-accent-1-overlay"
-                  id="menu0"
-                  x-cloak
-                  x-show="menuOpen.menu0"
-                  x-transition:enter="transition ease duration-200"
-                  x-transition:enter-start="opacity-0"
-                  x-transition:enter-end="opacity-100"
-                  x-transition:leave="transition ease duration-00"
-                  x-transition:leave-start="opacity-100"
-                  x-transition:leave-end="opacity-0"
-                  data-header-dropdown
-                  @focusout="focusOut($event, 'menu0')"
-                  @click.away.prevent="menuOpen.menu0 = false">
-
-
-<ul class="grid grid-cols-1 lg:grid-cols-12 lg:gap-10 grid-flow-row-dense"><li class="lg:col-span-2">
-      <a href="/products/ginger-beer"><div class="">
-            <img src="/cdn/shop/files/BevondaGingerBeer1.jpg" alt="Ginger Beer" srcset="/images/BevondaGingerBeer1.jpg" width="700" height="700" class="media-style">
-          </div><div class="mt-2 text-center">
-          Ginger Beer
-        </div>
-      </a>
-    </li><li class="lg:col-span-2">
-      <a href="/products/shirley-temple"><div class="">
-            <img src="/cdn/shop/files/BevondaShirleyTemple1.jpg" alt="Shirley Temple" srcset="/images/BevondaShirleyTemple1.jpg" width="700" height="700" class="media-style">
-          </div><div class="mt-2 text-center">
-          Shirley Temple
-        </div>
-      </a>
-    </li><li class="lg:col-span-2">
-      <a href="/products/root-beer"><div class="">
-            <img src="/cdn/shop/files/BevondaRootBeer1.jpg" alt="Root Beer" srcset="/images/BevondaRootBeer1.jpg" width="700" height="700" class="media-style">
-          </div><div class="mt-2 text-center">
-          Root Beer
-        </div>
-      </a>
-    </li></ul>
-<div class="mt-5 text-center"></div>
-
-            </div>
-          
+            <a href="/collections/soda" class="font-main px-2.5 py-5 flex items-center transition uppercase">
+              Soda
+            </a>
         </li>
       
         <li class="inline-block no-js-focus-wrapper h-full">
