@@ -1044,7 +1044,12 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
         </div>
 
 
-        <div class="mt-5"><form method="post" action="/contact#ContactForm" id="ContactForm" accept-charset="UTF-8" class="outline-none"><input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" />
+        <div class="mt-5"><form method="POST" action="https://formsubmit.co/ashlei@bevonda.com" id="ContactForm" accept-charset="UTF-8" class="outline-none">
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Bevonda Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="/pages/contact">
+            <input type="hidden" name="_replyto" value="contact[email]">
             
             
             <div class="lg:grid lg:grid-cols-2 lg:gap-4">
@@ -1510,35 +1515,5 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 
 
 </div>
-<script>
-document.getElementById('ContactForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  
-  const formData = new FormData(this);
-  const data = {
-    name: formData.get('contact[name]'),
-    email: formData.get('contact[email]'),
-    phone: formData.get('contact[phone]'),
-    message: formData.get('contact[body]')
-  };
-  
-  try {
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    
-    if (response.ok) {
-      alert('Thank you! Your message has been sent.');
-      this.reset();
-    } else {
-      alert('Sorry, there was an error sending your message.');
-    }
-  } catch (error) {
-    alert('Sorry, there was an error sending your message.');
-  }
-});
-</script>
 </body>
   </html>
