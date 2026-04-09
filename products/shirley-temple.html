@@ -118,6 +118,15 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 
 
       <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+<script>
+function switchProductImage(src, thumbLi) {
+  var img = document.getElementById('product-main-img');
+  if (img) img.src = src;
+  document.querySelectorAll('.product-thumbnail-list-item').forEach(function(el) { el.classList.remove('product-thumbnail-list-item--active'); });
+  if (thumbLi) thumbLi.classList.add('product-thumbnail-list-item--active');
+}
+</script>
+
       <script>
         function debounce(fn, wait) {
           let t;
@@ -1057,11 +1066,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 
 
 
-  <script src="/cdn/shop/t/2/assets/vendor-product.bundle.min.js" type="module"></script>
-  <script src="/cdn/shop/t/2/assets/product.js" type="module"></script>
-
-
-<style>
+  <style>
   :root {
     --heading-font-stack: 'Jost', sans-serif;
     --heading-font-weight: 700;
@@ -1082,7 +1087,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 <section
   class="text-scheme-text bg-scheme-background relative overflow-hidden bg-scheme-gradient"
   data-color-scheme="tertiary"
-  x-data=""
+  
   data-product-section
   >
 
@@ -1100,7 +1105,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
               <div class="col-span-full hidden lg:block">
                 <ul class="w-full grid grid-cols-4 gap-2.5">
 <li class="product-thumbnail-list-item product-thumbnail-list-item--active relative pb-media-shadow-half pr-media-shadow-half" data-thumb-index="0">
-    <a role="button" class="block media-thumbnail" onclick="switchProductImage('/images/BevondaShirleyTemple1.jpg', this.parentElement); return false;">
+    <a role="button" class="block media-thumbnail" onclick="event.preventDefault(); switchProductImage('/images/BevondaShirleyTemple1.jpg', this.parentElement);">
       <div class="media--small relative">
         <div class="media-style-container ellipse">
           <div class="object-wrapper aspect-w-1 aspect-h-1 media-content">
@@ -1114,7 +1119,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     </a>
   </li>
 <li class="product-thumbnail-list-item relative pb-media-shadow-half pr-media-shadow-half" data-thumb-index="1">
-    <a role="button" class="block media-thumbnail" onclick="switchProductImage('/images/BevondaShirleyTemple6Pack2.jpg', this.parentElement); return false;">
+    <a role="button" class="block media-thumbnail" onclick="event.preventDefault(); switchProductImage('/images/BevondaShirleyTemple6Pack2.jpg', this.parentElement);">
       <div class="media--small relative">
         <div class="media-style-container ellipse">
           <div class="object-wrapper aspect-w-1 aspect-h-1 media-content">
@@ -1892,12 +1897,6 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 </script>
 
 
-</div><script>
-function switchProductImage(src, thumbLi) {
-  document.getElementById('product-main-img').src = src;
-  document.querySelectorAll('.product-thumbnail-list-item').forEach(el => el.classList.remove('product-thumbnail-list-item--active'));
-  if (thumbLi) thumbLi.classList.add('product-thumbnail-list-item--active');
-}
-</script>
+</div>
 </body>
   </html>
